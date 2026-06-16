@@ -1480,6 +1480,68 @@
 
 
 /* -------------------- LAP PAGE -------------------- */
+/* ---------- Lab hero ----------*/
+
+.lab-hero-layout{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    gap: 3rem;
+  
+}
+
+.lab-logo-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lab-logo-large{
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+}
+
+
+
+.lab-content-column .hero-description{
+    max-width: 100%;
+}
+
+.lab-content-column .hero-description p{
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+
+
+
+@media (max-width: 992px){
+
+    .lab-hero-layout{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-line{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lab-logo-large{
+        max-width: 420px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+    .lab-logo-large{
+        max-width: 280px;
+    }
+}
 
 /* ---------- lab Gallary Section ---------- */
 
@@ -1524,7 +1586,6 @@
 }
 
 /* ---------- lightbox  ---------- */
-
 
 .lightbox{
   position: fixed;
